@@ -1,4 +1,4 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
+-- if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 
 -- AstroLSP allows you to customize the features in AstroNvim's LSP configuration engine
 -- Configuration documentation can be found with `:h astrolsp`
@@ -23,6 +23,9 @@ return {
         enabled = true, -- enable or disable format on save globally
         allow_filetypes = { -- enable format on save for specified filetypes only
           -- "go",
+          "c",
+          "cpp",
+          "lua",
         },
         ignore_filetypes = { -- disable format on save for specified filetypes
           -- "python",
@@ -30,7 +33,7 @@ return {
       },
       disabled = { -- disable formatting capabilities for the listed language servers
         -- disable lua_ls formatting capability if you want to use StyLua to format your lua code
-        -- "lua_ls",
+        "lua_ls",
       },
       timeout_ms = 1000, -- default format timeout
       -- filter = function(client) -- fully override the default formatting function
@@ -44,7 +47,7 @@ return {
     -- customize language server configuration options passed to `lspconfig`
     ---@diagnostic disable: missing-fields
     config = {
-      -- clangd = { capabilities = { offsetEncoding = "utf-8" } },
+      clangd = { capabilities = { offsetEncoding = "utf-8" } },
     },
     -- customize how language servers are attached
     handlers = {
