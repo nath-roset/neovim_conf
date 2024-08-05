@@ -1,0 +1,18 @@
+{
+  "templatesnippet": {
+    "prefix": [
+      "nrsnip",
+      "template"
+    ],
+    "body": [
+      "\"$1\": {",
+      "  \"prefix\": [$2],",
+      "\"body\" : [",
+      "  $0",
+      "],",
+      "\"description\": \"$3\"",
+      "},"
+    ],
+    "description": "Template to right snippets faster"
+  }
+}

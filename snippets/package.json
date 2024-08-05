@@ -1,0 +1,22 @@
+{
+  "name": "user_snippets",
+  "engines": {
+    "vscode": "^1.11.0"
+  },
+  "contributes": {
+    "snippets": [
+      {
+        "language": "all",
+        "path": "./snippet_template.json"
+      },
+      {
+        "language": "html",
+        "path": "./html_snip.jsonc"
+      },
+      {
+        "language":"cpp",
+        "path":"./cpp_snip.json"
+      }
+    ]
+  }
+}
