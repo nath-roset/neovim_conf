@@ -11,6 +11,11 @@ return {
     opts = {
       ensure_installed = {
         "lua_ls",
+        "bashls",
+        "clangd",
+        "cmake",
+        "jsonls",
+        "pylsp",
         -- add more arguments for adding more language servers
       },
     },
@@ -22,6 +27,12 @@ return {
     opts = {
       ensure_installed = {
         "stylua",
+        "shellcheck",
+        "shfmt",
+        "cmakelang",
+        "cmakelint",
+        "clang_format",
+        "prettier",
         -- add more arguments for adding more null-ls sources
       },
     },
@@ -32,6 +43,7 @@ return {
     opts = {
       ensure_installed = {
         "python",
+        "debugpy",
         -- add more arguments for adding more debuggers
       },
     },
