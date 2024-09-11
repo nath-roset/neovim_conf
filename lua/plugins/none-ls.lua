@@ -9,7 +9,7 @@ return {
     -- opts variable is the default configuration table for the setup function call
     local null_ls = require "null-ls"
     local fm = null_ls.builtins.formatting
-    local dia = null_ls.builtins.diagnostics
+    local diag = null_ls.builtins.diagnostics
 
     -- Check supported formatters and linters
     -- https://github.com/nvimtools/none-ls.nvim/tree/main/lua/null-ls/builtins/formatting
@@ -23,8 +23,10 @@ return {
       fm.prettier,
       fm.clang_format,
       fm.cmake_format,
+      fm.shfmt,
+      -- fm.xmlformatter,
       -- Set diagnostics
-      -- null_ls.builtins.diagnostics.chechmake, --[[not installed lol]]
+      -- diag.checkmake, --[[not installed lol]]
     })
   end,
 }

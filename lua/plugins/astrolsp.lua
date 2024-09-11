@@ -48,6 +48,13 @@ return {
     ---@diagnostic disable: missing-fields
     config = {
       clangd = { capabilities = { offsetEncoding = "utf-8" } },
+      ltex = {
+        filetypes = {
+          -- "markdown",
+          -- "rst",
+          "gitcommit",
+        },
+      },
     },
     -- customize how language servers are attached
     handlers = {

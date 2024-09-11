@@ -16,6 +16,7 @@ return {
         "cmake",
         "jsonls",
         "pylsp",
+        "ltex",
         -- add more arguments for adding more language servers
       },
     },
