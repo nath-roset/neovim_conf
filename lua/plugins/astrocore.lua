@@ -33,7 +33,14 @@ return {
         signcolumn = "yes", -- sets vim.opt.signcolumn to yes
         wrap = true, -- sets vim.opt.wrap
         list = true,
-        listchars = "eol:↴,tab:» ,trail:￮",
+        listchars = {
+          eol = "↵",
+          tab = "->",
+          trail = "·",
+          lead = "·",
+          extends = "→",
+          precedes = "←",
+        },
       },
       g = { -- vim.g.<key>
         expandtabs = true,
