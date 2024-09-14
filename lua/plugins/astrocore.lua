@@ -32,6 +32,8 @@ return {
         spell = false, -- sets vim.opt.spell
         signcolumn = "yes", -- sets vim.opt.signcolumn to yes
         wrap = true, -- sets vim.opt.wrap
+        list = true,
+        listchars = "eol:↴,tab:» ,trail:￮",
       },
       g = { -- vim.g.<key>
         expandtabs = true,
