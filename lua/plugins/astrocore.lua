@@ -27,7 +27,7 @@ return {
     -- vim options can be configured here
     options = {
       opt = { -- vim.opt.<key>
-        relativenumber = true, -- sets vim.opt.relativenumber
+        relativenumber = false, -- sets vim.opt.relativenumber
         number = true, -- sets vim.opt.number
         spell = false, -- sets vim.opt.spell
         signcolumn = "yes", -- sets vim.opt.signcolumn to yes
@@ -37,7 +37,7 @@ return {
           eol = "↵",
           tab = "->",
           trail = "·",
-          lead = "·",
+          -- lead = "·",
           extends = "→",
           precedes = "←",
         },
@@ -71,7 +71,7 @@ return {
           end,
           desc = "Close buffer from tabline",
         },
-
+        ["<Leader>fz"] = { desc = "Find chezmoi managed files" },
         -- tables with just a `desc` key will be registered with which-key if it's installed
         -- this is useful for naming menus
         -- ["<Leader>b"] = { desc = "Buffers" },
