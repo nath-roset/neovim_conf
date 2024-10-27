@@ -100,11 +100,9 @@ return {
   },
   {
     "nvim-telescope/telescope.nvim",
-    config = function(plugin, opts)
-      require "astronvim.plugins.configs.telescope"(plugin, opts)
-      local telescope = require "telescope"
-      telescope.load_extension "chezmoi"
-      vim.keymap.set("n", "<leader>fz", telescope.extensions.chezmoi.find_files, {}) -- done in astrocore to get a desc
-    end,
+    keys = {
+      { "<leader>fz", require("telescope").extensions.chezmoi.find_files, desc = "Find chezmoi managed files" },
+    },
+    config = function(plugin, opts) require "astronvim.plugins.configs.telescope"(plugin, opts) end,
   },
 }
