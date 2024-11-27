@@ -12,7 +12,7 @@ return {
       ensure_installed = {
         "lua_ls",
         "bashls",
-        -- "clangd", disabled on musl and ARM systems
+        "clangd",
         "cmake",
         "jsonls",
         "pylsp",
