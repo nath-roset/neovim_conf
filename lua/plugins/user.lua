@@ -105,4 +105,15 @@ return {
     },
     config = function(plugin, opts) require "astronvim.plugins.configs.telescope"(plugin, opts) end,
   },
+  {
+    "chomosuke/typst-preview.nvim",
+    lazy = false, -- or ft = 'typst'
+    version = "1.*",
+    opts = {
+      invert_colors = "never",
+      dependencies_bin = {
+        ["tinymist"] = "tinymist",
+      },
+    }, -- lazy.nvim will implicitly calls `setup {}`
+  },
 }
