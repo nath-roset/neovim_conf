@@ -10,15 +10,18 @@ return {
     -- overrides `require("mason-lspconfig").setup(...)`
     opts = {
       ensure_installed = {
+        --[[
+        -- disabled for ARM
         "lua_ls",
-        "bashls",
         "clangd",
+        "tinymist",
+        "marksman",
+        --]]
+        "bashls",
         "neocmake",
         "jsonls",
         "ruff",
-        "marksman",
         -- add more arguments for adding more language servers
-        "tinymist",
       },
     },
   },
