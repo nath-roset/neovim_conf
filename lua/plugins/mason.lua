@@ -31,7 +31,7 @@ return {
     -- overrides `require("mason-null-ls").setup(...)`
     opts = {
       ensure_installed = {
-        "stylua",
+        -- "stylua",
         "shellcheck",
         "shfmt",
         "cmakelang",
