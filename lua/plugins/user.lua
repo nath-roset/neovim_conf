@@ -116,4 +116,26 @@ return {
       },
     }, -- lazy.nvim will implicitly calls `setup {}`
   },
+  {
+    "p00f/clangd_extensions.nvim",
+  },
+  {
+    "Mofiqul/vscode.nvim",
+    opts = {
+      style = "light",
+    },
+  },
+  {
+    "catppuccin/nvim",
+    name = "catppuccin",
+    priority = 1000,
+  },
+  {
+    "rcarriga/nvim-notify",
+    opts = {
+      timeout = 2000,
+      stages = "fade",
+      render = "wrapped-compact",
+    },
+  },
 }

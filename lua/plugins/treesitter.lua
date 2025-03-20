@@ -14,6 +14,7 @@ return {
       "c",
       "cpp",
       "cmake",
+      "rust",
       -- Web workflows
       "css",
       "html",
@@ -21,7 +22,8 @@ return {
       "json",
       "json5",
       "jsonc",
-      "angular",
+      "vue",
+      -- "angular",
       "typescript",
       -- scripting
       "python",
@@ -30,8 +32,8 @@ return {
       "typst",
       -- "latex", -- needs tree-sitter-cli
       -- "markdown", "markdown_inline"
-      -- uni imposed
-      "ocaml",
+      -- uni imposed (not anymore)
+      -- "ocaml",
       -- conf files
       "yaml",
       -- misc
