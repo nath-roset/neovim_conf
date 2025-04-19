@@ -31,8 +31,6 @@ return {
         "stylua",
         "shellcheck",
         "shfmt",
-        "cmakelang",
-        "cmakelint",
         "clang_format",
         "prettier",
         -- add more arguments for adding more null-ls sources
