@@ -31,7 +31,7 @@ return {
       -- "latex", -- needs tree-sitter-cli
       -- "markdown", "markdown_inline"
       -- uni imposed
-      "ocaml",
+      -- "ocaml",
       -- conf files
       "yaml",
       -- misc
