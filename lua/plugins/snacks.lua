@@ -37,11 +37,13 @@ return {
       },
       explorer = {
         enabled = true,
+        toggles = { "", "" },
         replace_netrw = true
       },
       indent = { enabled = true },
       input = { enabled = true },
-      picker = { enabled = true,
+      picker = {
+        enabled = true,
         sources = {
           files = {
             cmd = "rg"
@@ -51,7 +53,7 @@ return {
       notifier = { enabled = true },
       quickfile = { enabled = true },
       scope = { enabled = true },
-      scroll = { enabled = true },
+      scroll = { enabled = false },
       statuscolumn = { enabled = true },
       words = { enabled = true },
     }, -- opts
@@ -63,6 +65,7 @@ return {
       { "<leader>:",       function() Snacks.picker.command_history() end,                         desc = "Command History" },
       { "<leader>n",       function() Snacks.picker.notifications() end,                           desc = "Notification History" },
       { "<leader>e",       function() Snacks.explorer() end,                                       desc = "File Explorer" },
+      { "<leader>o",       function() Snacks.explorer({ enter = false }) end,                      desc = "Toggle file explorer" },
       -- find
       { "<leader>fb",      function() Snacks.picker.buffers() end,                                 desc = "Buffers" },
       { "<leader>fc",      function() Snacks.picker.files({ cwd = vim.fn.stdpath("config") }) end, desc = "Find Config File" },

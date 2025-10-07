@@ -8,12 +8,15 @@ return {
       -- refer to the configuration section below
     },
     keys = {
-      -- {
-      --   "<leader>",
-      --   function()
-      --     require("which-key").show({ global = true })
-      --   end,
-      -- },
+      {
+        '<leader>lf',
+         vim.lsp.buf.format,
+        desc = "Format current buffer"
+        --   "<leader>?",
+        --   function()
+        --     require("which-key").show({ global = true })
+        --   end,
+      },
     },
   }
 }

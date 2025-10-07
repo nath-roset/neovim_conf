@@ -18,10 +18,12 @@ return {
   highlight = { enable = true },
   indent = { enable = true },
   ensure_installed = {
+      "awk",
       "lua",
       "vim",
       "c",
       "cpp",
+      "go",
       "cmake",
       "rust",
       "bash",

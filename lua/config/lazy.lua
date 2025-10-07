@@ -15,6 +15,8 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+
+vim.o.winborder = "rounded"
 -- Make sure to setup `mapleader` and `maplocalleader` before
 -- loading lazy.nvim so that mappings are correct.
 -- This is also a good place to setup other settings (vim.opt)
@@ -24,7 +26,7 @@ vim.g.maplocalleader = ","
 vim.o.expandtab = true
 vim.o.shiftwidth = 2
 vim.o.softtabstop = 2
-
+vim.opt.clipboard:append("unnamedplus")
 vim.opt.relativenumber = false -- sets vim.opt.relativenumber
 vim.opt.number = true          -- sets vim.opt.number
 vim.opt.spell = false          -- sets vim.opt.spell

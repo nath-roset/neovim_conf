@@ -32,9 +32,10 @@ vim.lsp.config('lua_ls', {
   filetypes = { 'lua' },
   settings =
   {
-
     Lua = {}
   }
 })
 
+
 vim.lsp.enable({ "lua_ls" })
+
