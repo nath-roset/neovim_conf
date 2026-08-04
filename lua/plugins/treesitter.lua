@@ -2,8 +2,8 @@
 return {
   "nvim-treesitter/nvim-treesitter",
   config = function (_,opts)
-	require "nvim-treesitter.configs".setup(opts)
-    end,
+    require "nvim-treesitter.config".setup(opts)
+  end,
   opts = {
     -- Install parsers synchronously (only applied to `ensure_installed`)
   sync_install = false,
